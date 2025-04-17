@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form id="cadastroForm">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <span class="error" id="nomeError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <span class="error" id="senhaError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmarSenha">Confirmação de Senha:</label>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                <span class="error" id="confirmarSenhaError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+                <span class="error" id="dataNascimentoError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Aceito os Termos de Uso
+                </label>
+                <span class="error" id="termosError"></span>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
